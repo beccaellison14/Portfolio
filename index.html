@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              // Dark mode colors
+              'dark-navy': '#0a192f',
+              'dark-light-navy': '#112240',
+              'dark-lightest-navy': '#233554',
+              'dark-slate': '#8892b0',
+              'dark-light-slate': '#a8b2d1',
+              'dark-lightest-slate': '#ccd6f6',
+              'dark-accent': '#64ffda',
+              'white': '#e6f1ff', // Maintained for specific text overrides
+
+              // Light mode colors
+              'light-bg': '#f8f9fa',
+              'light-card': '#ffffff',
+              'light-border': '#e2e8f0',
+              'light-text-header': '#1a202c',
+              'light-text-main': '#4a5568',
+              'light-text-subtle': '#718096',
+              'light-accent': '#3182ce',
+              'light-accent-bg': 'rgba(49, 130, 206, 0.1)',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
